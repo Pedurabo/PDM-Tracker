@@ -1,97 +1,44 @@
-﻿# PDM-Tracker
- # 📱 Parish Development Model (PDM) App
+# PDM-Tracker
 
-A mobile application designed to support the **Parish Development Model (PDM)** initiative in Uganda by digitizing parish-level data, improving transparency, and streamlining access to government development programs.
+**Android application** supporting Uganda’s **Parish Development Model (PDM)**.
 
----
+The app digitizes parish-level data collection, household registration, beneficiary tracking, and reporting to improve coordination between local leaders and government development programs.
 
-## 📌 Overview
+## Problem
+At the parish level, data is often collected manually, beneficiary tracking is difficult, transparency in fund allocation is limited, and monitoring is inconsistent.
 
-The **PDM App** is an Android-based solution built to enhance the implementation of Uganda’s Parish Development Model by enabling:
+## Solution
+A mobile system that enables:
+- Digital household and beneficiary registration
+- Role-based access for local leaders and officers
+- Tracking of PDM funds and activities
+- Real-time status updates and basic reporting
+- Foundation for offline support in low-connectivity areas
 
-- Digital registration of households and beneficiaries
-- Efficient data collection at parish level
-- Tracking of development funds and activities
-- Improved communication between local leaders and citizens
-- Transparent monitoring of government programs
-
-This system is designed to support grassroots development by bringing services closer to the people.
-
----
-
-## 🎯 Problem Statement
-
-In many communities, especially at parish level:
-
-- Data collection is manual and inefficient
-- Tracking beneficiaries is difficult
-- Transparency in fund allocation is limited
-- Communication between local leaders and citizens is slow
-- Monitoring and reporting is inconsistent
-
-The PDM App solves these challenges by introducing a centralized digital system.
-
----
-
-## 💡 Solution
-
-A mobile application that:
-
-- Digitizes parish-level records
-- Tracks beneficiaries and household data
-- Provides real-time updates on development activities
-- Supports local leaders (LC1, parish chiefs, etc.)
-- Enhances accountability in government programs
-
----
-
-## 🛠️ Tech Stack
-
+## Tech Stack
 - **Language:** Kotlin
-- **IDE:** Android Studio
+- **Platform:** Android
 - **Architecture:** MVVM (recommended)
-- **Database:** Firebase / Room (depending on implementation stage)
-- **Backend:** Firebase / REST API (future expansion)
 - **UI:** Material Design Components
+- **Backend / Data:** Firebase / Room (depending on implementation stage)
+- **IDE:** Android Studio
 
----
+## Key Features
+- User authentication and role-based access (Admin, LC1, Parish Officer, Citizen)
+- Household registration with demographic data
+- Beneficiary tracking and funding status
+- Simple reporting dashboard
+- Designed for future offline sync
 
-## 📱 Key Features
+## Getting Started
+1. Clone the repository
+2. Open the project in Android Studio
+3. Sync Gradle
+4. Add your `google-services.json` (if using Firebase)
+5. Run on an emulator or physical device
 
-### 👥 User Management
-- Registration & login system
-- Role-based access (Admin, LC1, Parish Officer, Citizen)
+## Project Status
+Core structure and feature design are in place. Some advanced features (full offline support, advanced reporting) are planned for future iterations.
 
-### 🏘️ Household Registration
-- Capture household details
-- Store demographic data
-- Assign unique IDs
-
-### 💰 Beneficiary Tracking
-- Track PDM fund beneficiaries
-- Monitor funding distribution
-- Update status in real time
-
-### 📊 Reporting Dashboard
-- Visual summaries of parish data
-- Progress tracking
-- Exportable reports
-
-### 📡 Offline Support (Planned)
-- Store data offline and sync later
-- Useful for rural areas with poor connectivity
-
----
-
-## 🧭 System Flow
-
-1. LC1/Parish officer logs into the system  
-2. Households are registered into the system  
-3. Beneficiaries are selected and tracked  
-4. Data is stored and synced to central database  
-5. Reports are generated for monitoring and decision-making  
-
----
-
-## 🏗️ Project Structure (Suggested)
-
+## Why this project
+Built to address real grassroots development challenges in Uganda by bringing digital tools closer to local administration and citizens.
